@@ -41,8 +41,6 @@ df = pd.read_csv("data_WithoutDuplicates.csv",
 # Total missing values for each feature
 print(df.isnull().sum())
 
-git config user.name "Szilva"
-
 
 # Delete rows where Signature_date is missing
 df.dropna(subset=['Signature_date'], inplace=True)
